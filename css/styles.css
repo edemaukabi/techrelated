@@ -1,0 +1,140 @@
+/* CSS Selectors */
+/*
+1. Type selectors p h1 div section
+2. Class selector
+3. Id selectors
+*/
+
+/* p {
+    font-size: 30px;
+    background-color: rgb(56, 160, 63);
+    color: white;
+}
+
+h3 {
+    font-size: 30px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+span {
+    text-decoration: line-through;
+} */
+
+/* .chidimma {
+    color: blueviolet;
+    text-decoration: line-through;
+} */
+
+/* #box {
+    text-decoration: overline;
+    background-color: bisque;
+}
+
+#hero-second {
+    color: white;
+    background-color: black;
+} */
+
+/* specificity */
+/* cascading style sheet */
+/* id class type */
+
+/* 
+A -> B -> C -> D
+ */
+
+/* .chidimma {
+    background-color: blue;
+}
+
+.chidimma {
+    background-color: red;
+}
+
+.chidimma {
+    background-color: blueviolet;
+}
+
+.just {
+    font-style: italic;
+} */
+
+/* h1, p {
+    color: blueviolet;
+} */
+
+.hello, .just, #hero-second {
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+/* descendant combinator */
+.group-one h3 {
+    color: red;
+}
+
+.group-one {
+    background-color: blue;
+}
+
+/* child combinator */
+.group-two > h3 {
+    color: blue;
+}
+
+/* adjacent sibling combinator */
+
+article {
+    background-color: blueviolet;
+}
+
+article:hover {
+    background-color: aqua;
+}
+
+/* h1 + p {
+    color: yellow;
+} */
+
+/* general sibling selector */
+
+h1 ~ p {
+    color: yellow;
+}
+
+#hero {
+    outline: 2px solid blue;
+}
+
+/* pseudo classes */
+
+#hero:focus {
+    outline: 2px solid red;
+}
+/* class id name */
+/* priority --> class --> name */
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: italic;
+}
+
+button:hover {
+    background-color: rgb(31, 31, 151);
+}
+
+#first-group-heading {
+    background-color: black;
+    padding: 40px 20px;
+    border: 2px solid red;
+    width: 200px;
+    margin: 20px;
+}

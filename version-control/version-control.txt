@@ -1,0 +1,11 @@
+Version Control ---> A system for tracking changes to files over time
+-- Revert to older versions
+-- Track who changed what and why
+
+steps
+create a git repo
+git add to add to staging area
+git commit -m "commit message" to save a copy to git
+
+git branch (view the current branch we are working in and other branches in the repo as well)
+git checkout -b branch-name
