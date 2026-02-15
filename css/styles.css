@@ -138,3 +138,39 @@ button:hover {
     width: 200px;
     margin: 20px;
 }
+
+.heading-six {
+    color: rgb(246, 246, 249);
+    font-size: 24px;
+    background-color: red;
+    /* border-width: 3px;
+    border-color: black;
+    border-style: solid; */
+    border: 5px solid rgb(97, 184, 70);
+    width: 500px;
+    height: 50px;
+    padding: 20px;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+
+}
+
+/* CSS BOX MODEL */
+
+.exp {
+    /* display: inline; */
+    background-color: aqua;
+}
+
+span {
+    background-color: red;
+    color: white;
+    width: 400px;
+    height: 50px;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+
