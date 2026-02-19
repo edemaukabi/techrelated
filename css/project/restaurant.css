@@ -12,6 +12,10 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 header h1 {
@@ -42,6 +46,7 @@ nav a:hover {
     padding: 80px 20px;
     text-align: center;
     color: white;
+    margin-top: 100px;
 }
 
 .hero h2 {
@@ -126,3 +131,55 @@ footer {
     font-size: 14px;
 }
 
+/* Contact Section */
+.contact {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.contact form {
+    width: 400px;
+    margin: auto;
+}
+
+.contact input, .contact textarea, .contact select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+.contact input:focus, .contact textarea:focus, .contact select:focus {
+    outline: none;
+    border-color: #a93226;
+}
+
+.contact button {
+    background-color: #c0392b;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact button:hover {
+    background-color: #a93226;
+}
+
+.contact button, .contact select{
+    width: 107%;
+}
