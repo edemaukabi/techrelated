@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(137, 63, 119);
+}
+
+.container {
+    background-color: blue;
+    padding: 10px;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: rgb(209, 192, 160);
+    margin: 5px;
+    width: 300px;
+}
+
+.item-1 {
+    order: 3;
+}
+
+.item-2 {
+    order: 6;
+}
+
+.item-3 {
+    order: 1;
+}
+
+.item-4 {
+    order: 5;
+}
+
+.item-5 {
+    order: 2;
+}
+
+.item-6 {
+    order: 4;
+}

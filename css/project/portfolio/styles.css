@@ -1,0 +1,780 @@
+/* ============================================================
+   PORTFOLIO STYLESHEET — Chidimma Nnalue
+   ============================================================
+   1. Variables & Reset        6. About
+   2. Base & Typography        7. Skills
+   3. Utilities                8. Projects
+   4. Navbar                   9. Contact
+   5. Hero                    10. Footer + Animations + Media Queries
+   ============================================================ */
+
+/* ---- 1. VARIABLES & RESET ---- */
+:root {
+    --bg: #0d0f14;
+    --surface: #151820;
+    --border: #2a2f42;
+    --accent: #e8ff47;
+    --accent-bg: rgba(232, 255, 71, 0.1);
+    --text: #e2e8f0;
+    --muted: #7a849e;
+    --radius: 10px;
+    --head: "Syne", sans-serif;
+    --body: "DM Mono", monospace;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---- 2. BASE & TYPOGRAPHY ---- */
+h1,
+h2,
+h3 {
+    font-family: var(--head);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.8rem);
+    font-weight: 800;
+}
+
+h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: 0.92rem;
+    color: var(--muted);
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+/* ---- 3. UTILITIES ---- */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+.about,
+.projects,
+.contact {
+    background: var(--surface);
+}
+
+/* Buttons — inline-flex so icons align with text */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 999px;
+    font-family: var(--head);
+    font-size: 0.88rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.25s;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+.btn-primary:hover {
+    background: #d4eb2a;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.btn-outline:hover {
+    background: var(--accent-bg);
+    transform: translateY(-2px);
+}
+
+.btn-ghost {
+    background: var(--surface);
+    color: var(--text);
+    border-color: var(--border);
+}
+
+.btn-ghost:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.btn-small {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.78rem;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+/* Badge pills and tech tags */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.28rem 0.8rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    transition: border-color 0.25s;
+}
+
+.badge:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.tag {
+    padding: 0.18rem 0.55rem;
+    background: var(--accent-bg);
+    color: var(--accent);
+    border-radius: 4px;
+    font-size: 0.72rem;
+}
+
+.label {
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* ---- 4. NAVBAR ---- */
+/* FLEX ROW: logo left, links right */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    background: rgba(13, 15, 20, 0.92);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    font-family: var(--head);
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+/* FLEX ROW: nav links spaced horizontally */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    font-family: var(--head);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    transition: color 0.25s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* CSS-only hamburger toggle */
+.nav-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: all 0.25s;
+}
+
+.nav-toggle:checked~.hamburger span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+}
+
+.nav-toggle:checked~.hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle:checked~.hamburger span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+}
+
+/* ---- 5. HERO ---- */
+/* FLEX ROW: text left, avatar right */
+.hero {
+    min-height: 100vh;
+    padding: 68px 5% 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-tag {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+}
+
+.hero-role {
+    font-family: var(--head);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0.75rem 0 1rem;
+}
+
+.hero-desc {
+    max-width: 500px;
+    margin-bottom: 1.75rem;
+}
+
+/* FLEX ROW: CTA buttons side by side */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-avatar {
+    flex-shrink: 0;
+}
+
+/* Avatar circle with centred initials */
+.avatar-circle {
+    width: clamp(180px, 22vw, 280px);
+    height: clamp(180px, 22vw, 280px);
+    border-radius: 50%;
+    border: 3px solid var(--border);
+    background: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--head);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 800;
+    color: var(--accent);
+}
+
+/* ---- 6. ABOUT ---- */
+/* FLEX ROW: bio left, stats right */
+.about-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 3.5rem;
+}
+
+.about-text {
+    flex: 1.3;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+}
+
+/* FLEX WRAP: two-column info list */
+.info-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    margin: 1.25rem 0 1.75rem;
+}
+
+.info-list li {
+    flex-basis: calc(50% - 1rem);
+    font-size: 0.85rem;
+}
+
+/* FLEX WRAP: 2×2 stat card grid */
+.stats {
+    flex: 0.8;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.stat-card {
+    flex: 1 1 calc(50% - 0.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.25rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition:
+        border-color 0.25s,
+        transform 0.25s;
+}
+
+.stat-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+}
+
+.stat-num {
+    font-family: var(--head);
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: 0.25rem;
+}
+
+/* ---- 7. SKILLS ---- */
+/* FLEX ROW: skill bars left, badge cloud right */
+.skills-wrapper {
+    display: flex;
+    gap: 3.5rem;
+    align-items: flex-start;
+}
+
+.skill-bars,
+.badge-cloud {
+    flex: 1;
+}
+
+.skill {
+    margin-bottom: 1.25rem;
+}
+
+/* FLEX ROW: skill name left, % right */
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+}
+
+.skill-header span:last-child {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.skill-track {
+    height: 6px;
+    background: #1c2030;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    width: var(--w);
+    background: linear-gradient(90deg, var(--accent), #5b8aff);
+    border-radius: 999px;
+    animation: growBar 1.2s ease both;
+}
+
+/* FLEX WRAP: badge pills flow naturally */
+.badge-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* ---- 8. PROJECTS ---- */
+/* FLEX WRAP: cards in a wrapping row */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.project-card {
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition:
+        transform 0.25s,
+        border-color 0.25s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.card-top {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.card-blue {
+    background: rgba(79, 135, 240, 0.12);
+    border-bottom: 1px solid rgba(79, 135, 240, 0.2);
+}
+
+.card-green {
+    background: rgba(52, 211, 153, 0.12);
+    border-bottom: 1px solid rgba(52, 211, 153, 0.2);
+}
+
+.card-orange {
+    background: rgba(251, 146, 60, 0.12);
+    border-bottom: 1px solid rgba(251, 146, 60, 0.2);
+}
+
+.card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.75rem;
+}
+
+.card-body h3 {
+    color: var(--text);
+}
+
+.card-body p {
+    flex: 1;
+    font-size: 0.84rem;
+}
+
+/* FLEX WRAP: tech tags row */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+/* FLEX ROW: card action buttons; margin-top:auto pushes to bottom */
+.card-footer {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: auto;
+}
+
+/* ---- 9. CONTACT ---- */
+/* FLEX ROW: info left, form right */
+.contact-wrapper {
+    display: flex;
+    gap: 3.5rem;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-intro {
+    margin-bottom: 1.75rem;
+}
+
+/* FLEX ROW: icon + text side by side */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.contact-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--accent-bg);
+    border: 1px solid rgba(232, 255, 71, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+/* FLEX COLUMN: form fields stacked */
+.contact-form {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+}
+
+/* FLEX ROW: first + last name inputs */
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* FLEX COLUMN: label above input */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.form-group label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+input,
+textarea {
+    padding: 0.7rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: var(--body);
+    font-size: 0.88rem;
+    outline: none;
+    transition:
+        border-color 0.25s,
+        box-shadow 0.25s;
+    width: 100%;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-bg);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--border);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* ---- 10. FOOTER ---- */
+.footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 2rem 0;
+}
+
+/* FLEX ROW: copyright left, links right */
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-inner p {
+    font-size: 0.82rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    transition: color 0.25s;
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+/* ---- ANIMATION ---- */
+@keyframes growBar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--w);
+    }
+}
+
+/* ---- MEDIA QUERIES ---- */
+
+/* Tablet: stack two-column layouts */
+@media (max-width: 900px) {
+
+    .about-wrapper,
+    .skills-wrapper,
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .stats {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 680px) {
+
+    /* Show hamburger, collapse nav into a dropdown */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 68px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        max-height: 0;
+        overflow: hidden;
+        transition:
+            max-height 0.35s ease,
+            padding 0.25s;
+        padding: 0;
+    }
+
+    .nav-toggle:checked~.nav-links {
+        max-height: 260px;
+        padding: 1.25rem 0;
+    }
+
+    .nav-links a {
+        padding: 0.75rem 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Hero: stack text below avatar */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: calc(68px + 2rem);
+    }
+
+    .hero-text {
+        order: 1;
+    }
+
+    .hero-avatar {
+        order: 0;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    /* Single-column adjustments */
+    .info-list li {
+        flex-basis: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
