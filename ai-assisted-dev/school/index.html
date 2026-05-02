@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evergreen Academy — Excellence in Education</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-icon">E</span>
+        <span>Evergreen <strong>Academy</strong></span>
+      </a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#admissions" class="nav__link">Admissions</a></li>
+        <li><a href="#courses" class="nav__link">Courses</a></li>
+        <li><a href="#staff" class="nav__link">Staff</a></li>
+        <li><a href="#events" class="nav__link">Events</a></li>
+        <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <a href="#admissions" class="btn btn--primary nav__cta">Apply Now</a>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero__bg"></div>
+      <div class="container hero__content">
+        <p class="hero__tag">Est. 1995 — Ranked #1 in the Region</p>
+        <h1 class="hero__title">Shaping Tomorrow's<br><span class="text-accent">Leaders Today</span></h1>
+        <p class="hero__subtitle">
+          Evergreen Academy delivers world-class education through innovative teaching,
+          dedicated faculty, and a nurturing community where every student can thrive.
+        </p>
+        <div class="hero__actions">
+          <a href="#admissions" class="btn btn--primary btn--lg">Start Your Application</a>
+          <a href="#courses" class="btn btn--outline btn--lg">Explore Courses</a>
+        </div>
+      </div>
+
+      <div class="hero__stats container">
+        <div class="stat">
+          <span class="stat__number">2,400+</span>
+          <span class="stat__label">Students Enrolled</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">180+</span>
+          <span class="stat__label">Expert Faculty</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">96%</span>
+          <span class="stat__label">Graduate Rate</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">50+</span>
+          <span class="stat__label">Programs Offered</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ADMISSIONS ===== -->
+    <section class="section admissions" id="admissions">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__tag">Join Our Family</p>
+          <h2 class="section__title">Admissions</h2>
+          <p class="section__subtitle">
+            We welcome students from all backgrounds. Our straightforward admissions process
+            is designed to help you take the first step toward an outstanding education.
+          </p>
+        </div>
+
+        <div class="admissions__grid">
+          <div class="admissions__steps">
+            <h3 class="admissions__steps-title">How to Apply</h3>
+
+            <div class="step">
+              <div class="step__num">01</div>
+              <div class="step__body">
+                <h4>Submit Online Application</h4>
+                <p>Complete our simple online form with your personal details and academic history.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step__num">02</div>
+              <div class="step__body">
+                <h4>Upload Documents</h4>
+                <p>Provide transcripts, recommendation letters, and a personal statement.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step__num">03</div>
+              <div class="step__body">
+                <h4>Entrance Assessment</h4>
+                <p>Attend our placement test and informal interview with department heads.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step__num">04</div>
+              <div class="step__body">
+                <h4>Receive Decision</h4>
+                <p>Get your admission decision within 10 business days and enroll online.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="admissions__info">
+            <div class="admissions__card">
+              <h3>Key Dates — 2026/27</h3>
+              <ul class="admissions__dates">
+                <li>
+                  <span class="admissions__date-label">Applications Open</span>
+                  <span class="admissions__date-val">Jan 15, 2026</span>
+                </li>
+                <li>
+                  <span class="admissions__date-label">Early Decision Deadline</span>
+                  <span class="admissions__date-val">Mar 1, 2026</span>
+                </li>
+                <li>
+                  <span class="admissions__date-label">Regular Deadline</span>
+                  <span class="admissions__date-val">May 15, 2026</span>
+                </li>
+                <li>
+                  <span class="admissions__date-label">Decisions Released</span>
+                  <span class="admissions__date-val">Jun 1, 2026</span>
+                </li>
+                <li>
+                  <span class="admissions__date-label">Term Begins</span>
+                  <span class="admissions__date-val">Sep 3, 2026</span>
+                </li>
+              </ul>
+              <a href="#" class="btn btn--primary btn--full">Apply Now</a>
+            </div>
+
+            <div class="admissions__requirements">
+              <h4>Requirements</h4>
+              <ul class="requirements__list">
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  Completed secondary education (WAEC/NECO or equivalent)
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  Minimum of 5 credits including English and Mathematics
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  Two letters of recommendation
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  Personal statement (500–800 words)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COURSES ===== -->
+    <section class="section courses" id="courses">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__tag">What We Offer</p>
+          <h2 class="section__title">Our Programmes</h2>
+          <p class="section__subtitle">
+            Choose from a wide range of rigorous programmes designed to prepare you for
+            university, careers, and life beyond the classroom.
+          </p>
+        </div>
+
+        <div class="courses__grid">
+
+          <div class="course-card">
+            <div class="course-card__icon" style="--icon-color: #3b82f6;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <h3>Science & Technology</h3>
+            <p>Physics, Chemistry, Biology, Computer Science — preparing students for STEM careers and research.</p>
+            <div class="course-card__meta">
+              <span>3-year programme</span>
+              <span>48 students / class</span>
+            </div>
+            <a href="#" class="course-card__link">Learn more &rarr;</a>
+          </div>
+
+          <div class="course-card">
+            <div class="course-card__icon" style="--icon-color: #10b981;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            </div>
+            <h3>Arts & Humanities</h3>
+            <p>Literature, History, Philosophy, Fine Arts — cultivating creative thinkers and critical writers.</p>
+            <div class="course-card__meta">
+              <span>3-year programme</span>
+              <span>36 students / class</span>
+            </div>
+            <a href="#" class="course-card__link">Learn more &rarr;</a>
+          </div>
+
+          <div class="course-card">
+            <div class="course-card__icon" style="--icon-color: #f59e0b;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            </div>
+            <h3>Business & Economics</h3>
+            <p>Accounting, Economics, Entrepreneurship — building the next generation of business leaders.</p>
+            <div class="course-card__meta">
+              <span>3-year programme</span>
+              <span>40 students / class</span>
+            </div>
+            <a href="#" class="course-card__link">Learn more &rarr;</a>
+          </div>
+
+          <div class="course-card">
+            <div class="course-card__icon" style="--icon-color: #8b5cf6;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            </div>
+            <h3>Information Technology</h3>
+            <p>Web Development, Data Science, Cybersecurity — hands-on tech skills for the digital economy.</p>
+            <div class="course-card__meta">
+              <span>2-year programme</span>
+              <span>30 students / class</span>
+            </div>
+            <a href="#" class="course-card__link">Learn more &rarr;</a>
+          </div>
+
+          <div class="course-card">
+            <div class="course-card__icon" style="--icon-color: #ef4444;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <h3>Health Sciences</h3>
+            <p>Pre-Medicine, Nursing Foundations, Public Health — the first step toward healthcare careers.</p>
+            <div class="course-card__meta">
+              <span>3-year programme</span>
+              <span>35 students / class</span>
+            </div>
+            <a href="#" class="course-card__link">Learn more &rarr;</a>
+          </div>
+
+          <div class="course-card">
+            <div class="course-card__icon" style="--icon-color: #06b6d4;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+            </div>
+            <h3>Social Sciences</h3>
+            <p>Government, Geography, Sociology — understanding society and preparing students for public service.</p>
+            <div class="course-card__meta">
+              <span>3-year programme</span>
+              <span>38 students / class</span>
+            </div>
+            <a href="#" class="course-card__link">Learn more &rarr;</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STAFF ===== -->
+    <section class="section staff" id="staff">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__tag">Our People</p>
+          <h2 class="section__title">Meet the Team</h2>
+          <p class="section__subtitle">
+            Our faculty are experienced educators, researchers, and industry professionals
+            passionate about inspiring the next generation.
+          </p>
+        </div>
+
+        <div class="staff__grid">
+
+          <div class="staff-card">
+            <div class="staff-card__avatar" style="--av-bg: #dbeafe; --av-color: #1d4ed8;">PR</div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Prof. Rachel Okafor</h3>
+              <p class="staff-card__role">Principal</p>
+              <p class="staff-card__bio">Ph.D. in Education Leadership from University of Lagos. 20+ years in academic administration.</p>
+              <div class="staff-card__socials">
+                <a href="#" aria-label="Email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <div class="staff-card__avatar" style="--av-bg: #dcfce7; --av-color: #15803d;">DM</div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Dr. Michael Adeyemi</h3>
+              <p class="staff-card__role">Head of Science Dept.</p>
+              <p class="staff-card__bio">Ph.D. in Physics, MIT. Former NASA collaborator with 15 years of teaching experience.</p>
+              <div class="staff-card__socials">
+                <a href="#" aria-label="Email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <div class="staff-card__avatar" style="--av-bg: #fef3c7; --av-color: #b45309;">NA</div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Mrs. Ngozi Acheampong</h3>
+              <p class="staff-card__role">Head of Arts & Humanities</p>
+              <p class="staff-card__bio">M.A. in English Literature, Ibadan. Published author and award-winning educator.</p>
+              <div class="staff-card__socials">
+                <a href="#" aria-label="Email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <div class="staff-card__avatar" style="--av-bg: #fce7f3; --av-color: #9d174d;">EK</div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Mr. Emmanuel Kwasi</h3>
+              <p class="staff-card__role">Head of Business Studies</p>
+              <p class="staff-card__bio">MBA, Strathmore University. Former investment banker turned passionate educator.</p>
+              <div class="staff-card__socials">
+                <a href="#" aria-label="Email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <div class="staff-card__avatar" style="--av-bg: #ede9fe; --av-color: #5b21b6;">FI</div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Ms. Fatima Ibrahim</h3>
+              <p class="staff-card__role">Head of ICT Department</p>
+              <p class="staff-card__bio">B.Sc. Computer Science, Covenant University. Google Certified Educator.</p>
+              <div class="staff-card__socials">
+                <a href="#" aria-label="Email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <div class="staff-card__avatar" style="--av-bg: #cffafe; --av-color: #0e7490;">JA</div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Dr. James Asante</h3>
+              <p class="staff-card__role">Head of Health Sciences</p>
+              <p class="staff-card__bio">M.B.B.S., University of Ghana. Practicing physician and passionate health educator.</p>
+              <div class="staff-card__socials">
+                <a href="#" aria-label="Email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EVENTS CALENDAR ===== -->
+    <section class="section events" id="events">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__tag">Stay Up to Date</p>
+          <h2 class="section__title">Events Calendar</h2>
+          <p class="section__subtitle">
+            Don't miss a beat — from open days to academic competitions and cultural festivals.
+          </p>
+        </div>
+
+        <div class="events__layout">
+
+          <div class="calendar">
+            <div class="calendar__header">
+              <button class="calendar__nav" aria-label="Previous month">&#8249;</button>
+              <h3 class="calendar__month">May 2026</h3>
+              <button class="calendar__nav" aria-label="Next month">&#8250;</button>
+            </div>
+            <div class="calendar__grid">
+              <div class="calendar__day-name">Sun</div>
+              <div class="calendar__day-name">Mon</div>
+              <div class="calendar__day-name">Tue</div>
+              <div class="calendar__day-name">Wed</div>
+              <div class="calendar__day-name">Thu</div>
+              <div class="calendar__day-name">Fri</div>
+              <div class="calendar__day-name">Sat</div>
+
+              <!-- Week 1 -->
+              <div class="calendar__day empty"></div>
+              <div class="calendar__day empty"></div>
+              <div class="calendar__day empty"></div>
+              <div class="calendar__day empty"></div>
+              <div class="calendar__day">1</div>
+              <div class="calendar__day">2</div>
+              <div class="calendar__day">3</div>
+              <!-- Week 2 -->
+              <div class="calendar__day">4</div>
+              <div class="calendar__day">5</div>
+              <div class="calendar__day event-dot" data-event="Open Day">6</div>
+              <div class="calendar__day">7</div>
+              <div class="calendar__day">8</div>
+              <div class="calendar__day">9</div>
+              <div class="calendar__day">10</div>
+              <!-- Week 3 -->
+              <div class="calendar__day">11</div>
+              <div class="calendar__day">12</div>
+              <div class="calendar__day">13</div>
+              <div class="calendar__day event-dot" data-event="Science Fair">14</div>
+              <div class="calendar__day">15</div>
+              <div class="calendar__day">16</div>
+              <div class="calendar__day event-dot" data-event="Sports Day">17</div>
+              <!-- Week 4 -->
+              <div class="calendar__day">18</div>
+              <div class="calendar__day">19</div>
+              <div class="calendar__day today">20</div>
+              <div class="calendar__day">21</div>
+              <div class="calendar__day">22</div>
+              <div class="calendar__day event-dot" data-event="Music Concert">23</div>
+              <div class="calendar__day">24</div>
+              <!-- Week 5 -->
+              <div class="calendar__day">25</div>
+              <div class="calendar__day event-dot" data-event="PTA Meeting">26</div>
+              <div class="calendar__day">27</div>
+              <div class="calendar__day">28</div>
+              <div class="calendar__day">29</div>
+              <div class="calendar__day">30</div>
+              <div class="calendar__day event-dot" data-event="Prize Giving">31</div>
+            </div>
+          </div>
+
+          <div class="events__list">
+            <h3 class="events__list-title">Upcoming Events</h3>
+
+            <div class="event-item event-item--blue">
+              <div class="event-item__date">
+                <span class="event-item__day">6</span>
+                <span class="event-item__month">May</span>
+              </div>
+              <div class="event-item__body">
+                <h4>Open Day & Campus Tour</h4>
+                <p>Prospective students and parents are invited for a guided campus tour and Q&A sessions with department heads.</p>
+                <span class="event-item__time">9:00 AM – 2:00 PM</span>
+              </div>
+            </div>
+
+            <div class="event-item event-item--green">
+              <div class="event-item__date">
+                <span class="event-item__day">14</span>
+                <span class="event-item__month">May</span>
+              </div>
+              <div class="event-item__body">
+                <h4>Annual Science & Innovation Fair</h4>
+                <p>Students showcase research projects and inventions. External judges and prizes for top innovations.</p>
+                <span class="event-item__time">10:00 AM – 5:00 PM</span>
+              </div>
+            </div>
+
+            <div class="event-item event-item--amber">
+              <div class="event-item__date">
+                <span class="event-item__day">17</span>
+                <span class="event-item__month">May</span>
+              </div>
+              <div class="event-item__body">
+                <h4>Inter-House Sports Competition</h4>
+                <p>Annual athletics, swimming, and team sports competition between all four school houses.</p>
+                <span class="event-item__time">8:00 AM – 6:00 PM</span>
+              </div>
+            </div>
+
+            <div class="event-item event-item--purple">
+              <div class="event-item__date">
+                <span class="event-item__day">23</span>
+                <span class="event-item__month">May</span>
+              </div>
+              <div class="event-item__body">
+                <h4>Cultural Arts & Music Concert</h4>
+                <p>A celebration of student talent — music, dance, drama, and visual arts performances.</p>
+                <span class="event-item__time">6:00 PM – 9:00 PM</span>
+              </div>
+            </div>
+
+            <div class="event-item event-item--red">
+              <div class="event-item__date">
+                <span class="event-item__day">31</span>
+                <span class="event-item__month">May</span>
+              </div>
+              <div class="event-item__body">
+                <h4>Annual Prize Giving & Graduation</h4>
+                <p>Celebration of academic excellence and graduation ceremony for final-year students.</p>
+                <span class="event-item__time">10:00 AM – 1:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__tag">What They Say</p>
+          <h2 class="section__title">Student & Parent Voices</h2>
+          <p class="section__subtitle">
+            Hear directly from the people whose lives Evergreen Academy has touched.
+          </p>
+        </div>
+
+        <div class="testimonials__grid">
+
+          <div class="testimonial-card testimonial-card--featured">
+            <div class="testimonial-card__quote">"</div>
+            <p class="testimonial-card__text">
+              Evergreen Academy completely transformed my daughter's academic confidence.
+              The teachers genuinely care about every student's success, not just exam results.
+              She gained admission to study Medicine at University of Lagos and we couldn't be prouder.
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" style="--av-bg: #dbeafe; --av-color: #1d4ed8;">AO</div>
+              <div>
+                <strong>Mrs. Amaka Okonkwo</strong>
+                <span>Parent — Class of 2025</span>
+              </div>
+            </div>
+            <div class="testimonial-card__stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__quote">"</div>
+            <p class="testimonial-card__text">
+              The Science department here is world-class. Dr. Adeyemi's teaching style made
+              complex Physics concepts click for me. I represented Nigeria at the International
+              Science Olympiad thanks to this school.
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" style="--av-bg: #dcfce7; --av-color: #15803d;">CT</div>
+              <div>
+                <strong>Chidi Tunde</strong>
+                <span>Alumni — Class of 2024</span>
+              </div>
+            </div>
+            <div class="testimonial-card__stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__quote">"</div>
+            <p class="testimonial-card__text">
+              From extracurriculars to career counselling, Evergreen gives you every tool
+              you need. I landed a scholarship to study Computer Science in Canada, and
+              I credit this school for preparing me so thoroughly.
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" style="--av-bg: #ede9fe; --av-color: #5b21b6;">ZM</div>
+              <div>
+                <strong>Zara Mensah</strong>
+                <span>Alumni — Class of 2023</span>
+              </div>
+            </div>
+            <div class="testimonial-card__stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__quote">"</div>
+            <p class="testimonial-card__text">
+              As a parent, what impressed me most was the communication from staff.
+              I always knew exactly how my son was progressing. The pastoral care
+              at this school is genuinely exceptional.
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" style="--av-bg: #fef3c7; --av-color: #b45309;">BN</div>
+              <div>
+                <strong>Mr. Babatunde Nwosu</strong>
+                <span>Parent — Current Student</span>
+              </div>
+            </div>
+            <div class="testimonial-card__stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__quote">"</div>
+            <p class="testimonial-card__text">
+              The business programme gave me practical skills — we ran a real student-led
+              startup in year two. That experience helped me secure a place at INSEAD's
+              young entrepreneurs programme.
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" style="--av-bg: #fce7f3; --av-color: #9d174d;">KA</div>
+              <div>
+                <strong>Kofi Asante</strong>
+                <span>Alumni — Class of 2022</span>
+              </div>
+            </div>
+            <div class="testimonial-card__stars">★★★★★</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer__top container">
+
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">
+          <span class="nav__logo-icon">E</span>
+          <span>Evergreen <strong>Academy</strong></span>
+        </a>
+        <p class="footer__tagline">
+          Shaping tomorrow's leaders through excellence, integrity, and innovation since 1995.
+        </p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__links-group">
+        <h4 class="footer__heading">Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#courses">Programmes</a></li>
+          <li><a href="#staff">Our Staff</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#">News & Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links-group">
+        <h4 class="footer__heading">Academics</h4>
+        <ul class="footer__links">
+          <li><a href="#">Science & Technology</a></li>
+          <li><a href="#">Arts & Humanities</a></li>
+          <li><a href="#">Business & Economics</a></li>
+          <li><a href="#">Information Technology</a></li>
+          <li><a href="#">Health Sciences</a></li>
+          <li><a href="#">Social Sciences</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links-group footer__contact">
+        <h4 class="footer__heading">Contact Us</h4>
+        <address class="footer__address">
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>14 Academy Road, Lekki Phase 1,<br>Lagos, Nigeria</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.04 2.2 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            <span>+234 (0) 801 234 5678</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span>info@evergreenacademy.edu.ng</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon – Fri: 7:30 AM – 4:30 PM</span>
+          </div>
+        </address>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2026 Evergreen Academy. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">&#8679;</a>
+
+  <script>
+    // ---- Mobile nav toggle ----
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav__links--open');
+      hamburger.classList.toggle('nav__hamburger--open');
+    });
+    navLinks.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('nav__links--open');
+        hamburger.classList.remove('nav__hamburger--open');
+      });
+    });
+
+    // ---- Sticky header shadow ----
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('header--scrolled', window.scrollY > 10);
+    });
+
+    // ---- Back-to-top button ----
+    const btt = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      btt.classList.toggle('back-to-top--visible', window.scrollY > 400);
+    });
+
+    // ---- Intersection Observer fade-in ----
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.course-card, .staff-card, .event-item, .testimonial-card, .step').forEach(el => {
+      el.classList.add('fade-up');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

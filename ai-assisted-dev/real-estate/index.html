@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meridian | Luxury Real Estate</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <a href="#" class="nav-logo">MERI<span>D</span>IAN</a>
+        <ul class="nav-links">
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="#agents">Agents</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">List Property</a>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#properties" onclick="toggleMenu()">Properties</a>
+        <a href="#agents" onclick="toggleMenu()">Agents</a>
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#testimonials" onclick="toggleMenu()">Reviews</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-left">
+            <div class="hero-tag">Premier Luxury Real Estate</div>
+            <h1>Find Your<br><em>Perfect</em><br>Address</h1>
+            <p class="hero-desc">We curate exceptional properties for discerning clients — from waterfront estates to
+                city penthouses. Your next chapter begins here.</p>
+            <div class="hero-actions">
+                <a href="#properties" class="btn-primary">Explore Properties</a>
+                <a href="#search" class="btn-outline">Search Homes</a>
+            </div>
+            <div class="hero-stats">
+                <div>
+                    <div class="stat-num">2,400+</div>
+                    <div class="stat-label">Properties Sold</div>
+                </div>
+                <div>
+                    <div class="stat-num">98%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div>
+                    <div class="stat-num">18+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-img-wrap">
+                <!-- Decorative windows grid -->
+                <div class="window-grid">
+                    <div class="window lit"></div>
+                    <div class="window"></div>
+                    <div class="window lit"></div>
+                    <div class="window lit"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window lit"></div>
+                    <div class="window"></div>
+                    <div class="window lit"></div>
+                    <div class="window lit"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window lit"></div>
+                    <div class="window lit"></div>
+                    <div class="window"></div>
+                    <div class="window lit"></div>
+                    <div class="window"></div>
+                    <div class="window lit"></div>
+                    <div class="window"></div>
+                    <div class="window lit"></div>
+                    <div class="window"></div>
+                    <div class="window lit"></div>
+                </div>
+                <!-- Building silhouettes -->
+                <div class="buildings">
+                    <div class="bld" style="width:30px;height:160px"></div>
+                    <div class="bld" style="width:50px;height:220px"></div>
+                    <div class="bld" style="width:40px;height:180px"></div>
+                    <div class="bld" style="width:70px;height:260px"></div>
+                    <div class="bld" style="width:35px;height:140px"></div>
+                    <div class="bld" style="width:55px;height:200px"></div>
+                    <div class="bld" style="width:45px;height:170px"></div>
+                </div>
+            </div>
+            <div class="hero-property-card">
+                <div class="prop-card-tag">Featured Listing</div>
+                <div class="prop-card-title">The Rosewood Estate</div>
+                <div style="color:#8A8278;font-size:0.78rem;margin-bottom:8px;">Beverly Hills, CA</div>
+                <div class="prop-card-price">$4,850,000</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH -->
+    <section class="search-section" id="search">
+        <h2>Discover Your <em>Ideal Home</em></h2>
+        <p class="search-subtitle">Search across thousands of premium listings</p>
+        <div class="search-tabs">
+            <button class="tab-btn active">Buy</button>
+            <button class="tab-btn" onclick="setTab(this)">Rent</button>
+            <button class="tab-btn" onclick="setTab(this)">Sell</button>
+            <button class="tab-btn" onclick="setTab(this)">Invest</button>
+        </div>
+        <div class="search-form">
+            <div class="search-field">
+                <span class="field-label">Location</span>
+                <input type="text" placeholder="City, neighborhood, or ZIP code">
+            </div>
+            <div class="search-field">
+                <span class="field-label">Property Type</span>
+                <select>
+                    <option>Any Type</option>
+                    <option>House</option>
+                    <option>Apartment</option>
+                    <option>Villa</option>
+                    <option>Penthouse</option>
+                    <option>Land</option>
+                </select>
+            </div>
+            <div class="search-field">
+                <span class="field-label">Price Range</span>
+                <select>
+                    <option>Any Price</option>
+                    <option>Under $500K</option>
+                    <option>$500K – $1M</option>
+                    <option>$1M – $3M</option>
+                    <option>$3M – $5M</option>
+                    <option>$5M+</option>
+                </select>
+            </div>
+            <div class="search-field">
+                <span class="field-label">Bedrooms</span>
+                <select>
+                    <option>Any</option>
+                    <option>1+</option>
+                    <option>2+</option>
+                    <option>3+</option>
+                    <option>4+</option>
+                    <option>5+</option>
+                </select>
+            </div>
+            <button class="search-btn">Search</button>
+        </div>
+    </section>
+
+    <!-- FEATURED PROPERTIES -->
+    <section class="featured" id="properties">
+        <div class="section-header">
+            <div>
+                <div class="section-tag">Curated Listings</div>
+                <h2>Featured<br>Properties</h2>
+            </div>
+            <a href="#" class="see-all">View All Listings →</a>
+        </div>
+        <div class="properties-grid">
+            <!-- Large card -->
+            <div class="prop-card">
+                <div class="prop-img-wrap" style="height:380px;">
+                    <div class="prop-img-placeholder p1" style="height:100%;position:relative;"></div>
+                    <div class="prop-badge">For Sale</div>
+                </div>
+                <div class="prop-info">
+                    <div class="prop-price">$4,850,000</div>
+                    <div class="prop-name">The Rosewood Estate</div>
+                    <div class="prop-location">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Beverly Hills, California
+                    </div>
+                    <div class="prop-details">
+                        <span class="prop-detail">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            </svg>
+                            5 Beds
+                        </span>
+                        <span class="prop-detail">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 12h16M4 6h16M4 18h7" />
+                            </svg>
+                            4 Baths
+                        </span>
+                        <span class="prop-detail">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                            </svg>
+                            6,200 ft²
+                        </span>
+                        <span class="prop-detail" style="color:var(--gold)">★ 4.9</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Cards 2–5 -->
+            <div class="prop-card">
+                <div class="prop-img-wrap">
+                    <div class="prop-img-placeholder p2" style="height:100%;position:relative;"></div>
+                    <div class="prop-badge">New Listing</div>
+                </div>
+                <div class="prop-info">
+                    <div class="prop-price">$1,290,000</div>
+                    <div class="prop-name">Azure Sky Penthouse</div>
+                    <div class="prop-location">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Manhattan, New York
+                    </div>
+                    <div class="prop-details">
+                        <span class="prop-detail">3 Beds</span>
+                        <span class="prop-detail">2 Baths</span>
+                        <span class="prop-detail">2,100 ft²</span>
+                        <span class="prop-detail" style="color:var(--gold)">★ 4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="prop-card">
+                <div class="prop-img-wrap">
+                    <div class="prop-img-placeholder p3" style="height:100%;position:relative;"></div>
+                    <div class="prop-badge">For Sale</div>
+                </div>
+                <div class="prop-info">
+                    <div class="prop-price">$2,175,000</div>
+                    <div class="prop-name">Hillcrest Manor</div>
+                    <div class="prop-location">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Malibu, California
+                    </div>
+                    <div class="prop-details">
+                        <span class="prop-detail">4 Beds</span>
+                        <span class="prop-detail">3 Baths</span>
+                        <span class="prop-detail">3,800 ft²</span>
+                        <span class="prop-detail" style="color:var(--gold)">★ 4.7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="prop-card">
+                <div class="prop-img-wrap">
+                    <div class="prop-img-placeholder p4" style="height:100%;position:relative;"></div>
+                    <div class="prop-badge sold">For Rent</div>
+                </div>
+                <div class="prop-info">
+                    <div class="prop-price">$8,500 <span style="font-size:0.9rem;color:var(--warm-gray)">/mo</span>
+                    </div>
+                    <div class="prop-name">The Crimson Loft</div>
+                    <div class="prop-location">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Chicago, Illinois
+                    </div>
+                    <div class="prop-details">
+                        <span class="prop-detail">2 Beds</span>
+                        <span class="prop-detail">2 Baths</span>
+                        <span class="prop-detail">1,650 ft²</span>
+                        <span class="prop-detail" style="color:var(--gold)">★ 4.9</span>
+                    </div>
+                </div>
+            </div>
+            <div class="prop-card">
+                <div class="prop-img-wrap">
+                    <div class="prop-img-placeholder p5" style="height:100%;position:relative;"></div>
+                    <div class="prop-badge">For Sale</div>
+                </div>
+                <div class="prop-info">
+                    <div class="prop-price">$3,400,000</div>
+                    <div class="prop-name">Indigo Heights Villa</div>
+                    <div class="prop-location">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Miami Beach, Florida
+                    </div>
+                    <div class="prop-details">
+                        <span class="prop-detail">6 Beds</span>
+                        <span class="prop-detail">5 Baths</span>
+                        <span class="prop-detail">5,100 ft²</span>
+                        <span class="prop-detail" style="color:var(--gold)">★ 5.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-section" id="about">
+        <div class="why-left">
+            <div class="section-tag" style="color:var(--gold)">Why Meridian</div>
+            <h2>Real Estate, <em>Refined</em> for the Modern World</h2>
+            <p>We go beyond transactions. Our advisors build relationships built on integrity, market mastery, and an
+                obsessive attention to what matters most — finding you the perfect home.</p>
+            <a href="#agents" class="btn-outline"
+                style="margin-top:2rem;border-color:rgba(184,146,90,0.4);color:var(--cream);display:inline-block;">Meet
+                Our Team</a>
+        </div>
+        <div class="why-right">
+            <div class="why-card">
+                <div class="why-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                </div>
+                <h4>Trusted & Verified</h4>
+                <p>Every listing is thoroughly inspected and verified by our certified team before it reaches you.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                </div>
+                <h4>24/7 Support</h4>
+                <p>Our advisors are available round the clock to answer questions and guide every step.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <line x1="12" y1="1" x2="12" y2="23" />
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                    </svg>
+                </div>
+                <h4>Best Value</h4>
+                <p>We negotiate to ensure you get the best possible price, whether buying, selling, or renting.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                </div>
+                <h4>Expert Advisors</h4>
+                <p>Decades of combined expertise across residential, commercial, and luxury real estate markets.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AGENTS -->
+    <section class="agents-section" id="agents">
+        <div class="section-header">
+            <div>
+                <div class="section-tag">Our People</div>
+                <h2>Meet the<br>Advisors</h2>
+            </div>
+            <a href="#" class="see-all">All Agents →</a>
+        </div>
+        <div class="agents-grid">
+            <div class="agent-card">
+                <div class="agent-img-wrap">
+                    <div class="agent-bg ag1"></div>
+                    <div class="agent-img-overlay">
+                        <div class="agent-socials">
+                            <a class="agent-social" href="#">in</a>
+                            <a class="agent-social" href="#">tw</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-info">
+                    <div class="agent-name">Alexandra Winters</div>
+                    <div class="agent-title">Senior Luxury Advisor</div>
+                    <div class="agent-stats">
+                        <div>
+                            <div class="agent-stat-num">142</div>
+                            <div class="agent-stat-label">Deals Closed</div>
+                        </div>
+                        <div>
+                            <div class="agent-stat-num">$340M</div>
+                            <div class="agent-stat-label">Total Volume</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="agent-card">
+                <div class="agent-img-wrap">
+                    <div class="agent-bg ag2"></div>
+                    <div class="agent-img-overlay">
+                        <div class="agent-socials">
+                            <a class="agent-social" href="#">in</a>
+                            <a class="agent-social" href="#">tw</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-info">
+                    <div class="agent-name">Marcus Chen</div>
+                    <div class="agent-title">Commercial Specialist</div>
+                    <div class="agent-stats">
+                        <div>
+                            <div class="agent-stat-num">98</div>
+                            <div class="agent-stat-label">Deals Closed</div>
+                        </div>
+                        <div>
+                            <div class="agent-stat-num">$210M</div>
+                            <div class="agent-stat-label">Total Volume</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="agent-card">
+                <div class="agent-img-wrap">
+                    <div class="agent-bg ag3"></div>
+                    <div class="agent-img-overlay">
+                        <div class="agent-socials">
+                            <a class="agent-social" href="#">in</a>
+                            <a class="agent-social" href="#">tw</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-info">
+                    <div class="agent-name">Isabelle Morel</div>
+                    <div class="agent-title">Residential Expert</div>
+                    <div class="agent-stats">
+                        <div>
+                            <div class="agent-stat-num">215</div>
+                            <div class="agent-stat-label">Deals Closed</div>
+                        </div>
+                        <div>
+                            <div class="agent-stat-num">$185M</div>
+                            <div class="agent-stat-label">Total Volume</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="agent-card">
+                <div class="agent-img-wrap">
+                    <div class="agent-bg ag4"></div>
+                    <div class="agent-img-overlay">
+                        <div class="agent-socials">
+                            <a class="agent-social" href="#">in</a>
+                            <a class="agent-social" href="#">tw</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-info">
+                    <div class="agent-name">David Okonkwo</div>
+                    <div class="agent-title">Investment Strategist</div>
+                    <div class="agent-stats">
+                        <div>
+                            <div class="agent-stat-num">78</div>
+                            <div class="agent-stat-label">Deals Closed</div>
+                        </div>
+                        <div>
+                            <div class="agent-stat-num">$290M</div>
+                            <div class="agent-stat-label">Total Volume</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-tag">Client Stories</div>
+        <h2>Voices of <em style="font-style:italic;color:var(--gold)">Trust</em></h2>
+        <div class="testimonials-grid">
+            <div class="testi-card">
+                <span class="quote-mark">"</span>
+                <div class="stars">★★★★★</div>
+                <p class="testi-text">Working with Alexandra was a revelation. She found us our dream home in Beverly
+                    Hills in under two weeks — we were stunned. The entire Meridian experience was flawless from start
+                    to finish.</p>
+                <div class="testi-author">
+                    <div class="testi-avatar av1">JR</div>
+                    <div>
+                        <div class="testi-name">Jonathan & Rachel Pierce</div>
+                        <div class="testi-role">Beverly Hills, CA — Purchased $4.2M Estate</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card">
+                <span class="quote-mark">"</span>
+                <div class="stars">★★★★★</div>
+                <p class="testi-text">Marcus's market knowledge is extraordinary. He guided our portfolio acquisition
+                    with such precision that we closed three commercial properties in one quarter, all above
+                    projections.</p>
+                <div class="testi-author">
+                    <div class="testi-avatar av2">SK</div>
+                    <div>
+                        <div class="testi-name">Sophia Kim</div>
+                        <div class="testi-role">New York, NY — Commercial Investor</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card">
+                <span class="quote-mark">"</span>
+                <div class="stars">★★★★★</div>
+                <p class="testi-text">As first-time buyers, we were nervous. Isabelle made the whole journey feel
+                    effortless and empowering. She negotiated brilliantly and we moved in three weeks ahead of schedule.
+                </p>
+                <div class="testi-author">
+                    <div class="testi-avatar av3">AL</div>
+                    <div>
+                        <div class="testi-name">Aiden & Lucy Flores</div>
+                        <div class="testi-role">Miami, FL — First Home Purchase</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <div class="contact-left">
+            <div class="section-tag">Get In Touch</div>
+            <h2>Let's Find Your<br><em style="font-style:italic;color:var(--gold)">Dream</em> Home</h2>
+            <p>Whether you're buying, selling, or simply exploring possibilities — our advisors are ready to listen and
+                guide you to the right decision.</p>
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Our Office</strong>
+                        <span>1200 Wilshire Blvd, Suite 800, Los Angeles, CA 90017</span>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.61 5.61l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Phone</strong>
+                        <span>+1 (310) 555-0192</span>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Email</strong>
+                        <span>hello@meridianrealty.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" placeholder="Alexandra">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" placeholder="Winters">
+                    </div>
+                </div>
+                <div class="form-row" style="margin-top:-1px;">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="you@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="+1 (310) 000-0000">
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top:-1px;">
+                    <label for="interest">I'm Interested In</label>
+                    <select id="interest">
+                        <option>Buying a Property</option>
+                        <option>Selling a Property</option>
+                        <option>Renting</option>
+                        <option>Property Investment</option>
+                        <option>General Inquiry</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin-top:-1px;">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="5"
+                        placeholder="Tell us about the property you're looking for, budget, timeline..."></textarea>
+                </div>
+                <button class="form-submit" type="submit">Send Message →</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#" class="nav-logo">MERI<span>D</span>IAN</a>
+                <p>The most trusted name in luxury real estate since 2007. Connecting exceptional properties with
+                    exceptional people.</p>
+                <div class="footer-social">
+                    <a href="#">fb</a>
+                    <a href="#">ig</a>
+                    <a href="#">tw</a>
+                    <a href="#">in</a>
+                    <a href="#">yt</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Properties</h5>
+                <ul>
+                    <li><a href="#">For Sale</a></li>
+                    <li><a href="#">For Rent</a></li>
+                    <li><a href="#">New Developments</a></li>
+                    <li><a href="#">Commercial</a></li>
+                    <li><a href="#">Investment</a></li>
+                    <li><a href="#">Luxury Estates</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Agents</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Room</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Resources</h5>
+                <ul>
+                    <li><a href="#">Mortgage Calculator</a></li>
+                    <li><a href="#">Market Reports</a></li>
+                    <li><a href="#">Buyer's Guide</a></li>
+                    <li><a href="#">Seller's Guide</a></li>
+                    <li><a href="#">Neighborhood Guide</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Meridian Realty Group. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Fair Housing</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

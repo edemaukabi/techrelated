@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delish Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <div class="container nav">
+            <h2 class="logo">Delish</h2>
+
+            <nav id="navLinks">
+                <a href="#">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#chef">Chef</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reservation">Reserve</a>
+            </nav>
+
+            <div id="menuBtn">☰</div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content container">
+            <h1>Experience Fine Dining</h1>
+            <p>Where flavor meets elegance</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section">
+        <div class="container">
+            <h2>Our Menu</h2>
+
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <img src="https://picsum.photos/300/200" alt="">
+                    <h3>Grilled Salmon</h3>
+                    <p>Fresh salmon with herbs and spices</p>
+                    <div class="menu-footer">
+                        <span>$25</span>
+                        <button>Order</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://picsum.photos/301/200" alt="">
+                    <h3>Steak Deluxe</h3>
+                    <p>Juicy steak cooked to perfection</p>
+                    <div class="menu-footer">
+                        <span>$40</span>
+                        <button>Order</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://picsum.photos/302/200" alt="">
+                    <h3>Pasta Special</h3>
+                    <p>Italian pasta with creamy sauce</p>
+                    <div class="menu-footer">
+                        <span>$18</span>
+                        <button>Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHEF -->
+    <section id="chef" class="section alt">
+        <div class="container chef">
+            <img src="https://picsum.photos/200" alt="">
+            <div>
+                <h2>Our Chef</h2>
+                <p>
+                    Meet our award-winning chef who brings passion and creativity
+                    to every dish. With years of experience in fine dining,
+                    every meal is crafted to perfection.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+        <h2>Top Meals</h2>
+
+        <div class="gallery">
+            <div class="gallery-track">
+                <img src="https://picsum.photos/300/200?1">
+                <img src="https://picsum.photos/300/200?2">
+                <img src="https://picsum.photos/300/200?3">
+                <img src="https://picsum.photos/300/200?4">
+                <img src="https://picsum.photos/300/200?5">
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVATION -->
+    <section id="reservation" class="section alt">
+        <div class="container narrow">
+            <h2>Reserve a Table</h2>
+
+            <form class="form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="date" required>
+                <input type="time" required>
+                <button class="btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Delish Restaurant</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

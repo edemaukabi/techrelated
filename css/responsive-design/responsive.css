@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: aqua;
+    width: 100%;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.box {
+    width: 30%;
+    background-color: tomato;
+}
+
+.main-heading {
+    font-size: 50px;
+}
+
+.header {
+    background-color: rgb(12, 12, 12);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* @media (condition) {
+    
+} */
+
+
+
+@media (max-width: 1024px) {
+    .box {
+        background-color: black;
+        color: white;
+    }
+
+    .main-heading {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .box {
+        background-color: green;
+        color: white;
+        width: 50%;
+
+        margin-bottom: 10px;
+        min-height: 100px;
+    }
+
+    .main-heading {
+        font-size: 18px;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .header {
+        border: none;
+        margin-bottom: 0px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+        background-color: rgb(15, 13, 13);
+        margin-top: 0px;
+        border: none;
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
+
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .mobile-nav li {
+        margin-bottom: 10px;
+    }
+
+    .mobile-nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .box {
+        background-color: purple;
+        color: white;
+    }
+
+    .main-heading {
+        font-size: 25px;
+    }
+}

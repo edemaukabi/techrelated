@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chidimma Nnalue | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <h2 class="logo">Chidimma Nnalue</h2>
+
+            <nav id="navLinks">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div id="menuBtn">☰</div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Hi, I'm <span>Chidimma Nnalue</span></h1>
+            <p>I build clean, modern and user-friendly web experiences.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn-outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container narrow">
+            <h2>About Me</h2>
+            <p>
+                I’m a developer focused on building scalable and visually appealing
+                digital products. I prioritize clean design, performance, and user
+                experience.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+        <div class="container">
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+                <div class="card">HTML</div>
+                <div class="card">CSS</div>
+                <div class="card">JavaScript</div>
+                <div class="card">Responsive Design</div>
+                <div class="card">Git</div>
+                <div class="card">UI/UX</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="projects">
+                <div class="project" onclick="openModal('Project One')">
+                    <h3>Portfolio Website</h3>
+                    <p>Modern UI and responsive layout</p>
+                </div>
+
+                <div class="project" onclick="openModal('Project Two')">
+                    <h3>Restaurant Website</h3>
+                    <p>Scalable frontend architecture</p>
+                </div>
+
+                <div class="project" onclick="openModal('Project Three')">
+                    <h3>Project Three</h3>
+                    <p>Interactive and smooth UX</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section alt">
+        <div class="container">
+            <h2>Testimonials</h2>
+
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"Excellent work and great communication."</p>
+                    <h4>- Client</h4>
+                </div>
+
+                <div class="testimonial">
+                    <p>"Highly skilled and very reliable."</p>
+                    <h4>- Client</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="container narrow">
+            <h2>Contact</h2>
+
+            <form class="contact">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-box">
+            <span class="close" onclick="closeModal()">×</span>
+            <h3 id="modalTitle"></h3>
+            <p>Project details go here.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 Your Name</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #fff;
+    color: #111;
+}
+
+/* COLORS */
+:root {
+    --yellow: #facc15;
+    --purple: #6b21a8;
+}
+
+/* LAYOUT */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.alt {
+    background: #fafafa;
+}
+
+/* NAV */
+.header {
+    background: #111;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    color: var(--yellow);
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+#menuBtn {
+    display: none;
+    font-size: 1.5rem;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: url("https://picsum.photos/1600/900") center/cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 40%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.btn {
+    background: var(--yellow);
+    padding: 10px 20px;
+    border: none;
+    margin-top: 15px;
+}
+
+/* MENU */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card img {
+    width: 100%;
+}
+
+.menu-card h3 {
+    margin: 10px;
+}
+
+.menu-card p {
+    margin: 0 10px 10px;
+    color: gray;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu-footer button {
+    background: var(--purple);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+/* CHEF */
+.chef {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+}
+
+.chef img {
+    border-radius: 50%;
+}
+
+/* GALLERY */
+.gallery {
+    overflow: hidden;
+}
+
+.gallery-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 20s linear infinite;
+}
+
+.gallery img {
+    border-radius: 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* FORM */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input {
+    padding: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 20px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    #menuBtn {
+        display: block;
+        color: white;
+    }
+
+    .chef {
+        flex-direction: column;
+        text-align: center;
+    }
+}
